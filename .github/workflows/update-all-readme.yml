@@ -1,0 +1,74 @@
+name: One-time README Bulk Update
+
+on:
+  workflow_dispatch:
+
+jobs:
+  bulk-update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Set timezone
+        run: sudo timedatectl set-timezone 'Asia/Seoul'
+
+      - name: Bulk Update README.md (from 03-18 to today)
+        run: |
+          START_DATE="2025-03-18"
+          END_DATE=$(date '+%Y-%m-%d')
+
+          current_date="$START_DATE"
+
+          while [ "$current_date" != "$(date -I -d "$END_DATE + 1 day")" ]; do
+            DATE=$(date -d "$current_date" '+%m-%d')
+            TODAY=$(date -d "$current_date" '+%Y년 %m월 %d일')
+
+            PYTHON_STATUS="❌"
+            JAVASCRIPT_STATUS="❌"
+            JAVA_STATUS="❌"
+            SQL_STATUS="❌"
+
+            PYTHON_FILE=$(grep -rl "${TODAY}" "Python3" --include="README.md" | head -n 1)
+            JAVASCRIPT_FILE=$(grep -rl "${TODAY}" "JavaScript" --include="README.md" | head -n 1)
+            JAVA_FILE=$(grep -rl "${TODAY}" "Java" --include="README.md" | head -n 1)
+            SQL_FILE=$(grep -rl "${TODAY}" "MySQL" --include="README.md" | head -n 1)
+
+            if [[ -n $PYTHON_FILE ]]; then PYTHON_STATUS="✅"; fi
+            if [[ -n $JAVASCRIPT_FILE ]]; then JAVASCRIPT_STATUS="✅"; fi
+            if [[ -n $JAVA_FILE ]]; then JAVA_STATUS="✅"; fi
+            if [[ -n $SQL_FILE ]]; then SQL_STATUS="✅"; fi
+
+            # 공통 문제 정보 추출 (Python 기준)
+            if [[ -n $PYTHON_FILE ]]; then
+              COMMON_PROBLEM_NAME=$(head -n1 "$PYTHON_FILE" | sed 's/^# \[.*\] \(.*\) - .*/\1/')
+              COMMON_PROBLEM_LINK=$(grep -m1 -oP '(?<=\().*(?=\))' "$PYTHON_FILE")
+            else
+              COMMON_PROBLEM_NAME="-"
+              COMMON_PROBLEM_LINK="-"
+            fi
+
+            # SQL 문제 정보 별도 추출
+            if [[ -n $SQL_FILE ]]; then
+              SQL_PROBLEM_NAME=$(head -n1 "$SQL_FILE" | sed 's/^# \[.*\] \(.*\) - .*/\1/')
+              SQL_PROBLEM_LINK=$(grep -m1 -oP '(?<=\().*(?=\))' "$SQL_FILE")
+            else
+              SQL_PROBLEM_NAME="-"
+              SQL_PROBLEM_LINK="-"
+            fi
+
+            # README.md에 들여쓰기 추가 (인용문 방식)
+            echo "> | $DATE | $PYTHON_STATUS | $JAVASCRIPT_STATUS | $JAVA_STATUS | $COMMON_PROBLEM_NAME | [문제 링크]($COMMON_PROBLEM_LINK) | $SQL_STATUS | $SQL_PROBLEM_NAME | [문제 링크]($SQL_PROBLEM_LINK) |" >> README.md
+
+            # 날짜 증가
+            current_date=$(date -I -d "$current_date + 1 day")
+          done
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: Bulk README update (03-18 to today)" || echo "No changes to commit"
+          git push
