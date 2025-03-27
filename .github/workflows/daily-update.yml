@@ -20,7 +20,7 @@ jobs:
       - name: Set timezone
         run: sudo timedatectl set-timezone 'Asia/Seoul'
 
-      - name: Update README.md with Indentation
+      - name: Update README.md with Quoted Indentation
         run: |
           DATE=$(date '+%m-%d')
 
@@ -31,7 +31,7 @@ jobs:
 
           TODAY=$(date '+%Y년 %m월 %d일')
 
-          # 공통 문제는 Python3에서만 찾기
+          # 공통 문제 (Python 기준)
           PYTHON_FILE=$(grep -rl "${TODAY}" "Python3" --include="README.md" | head -n 1)
           JAVASCRIPT_FILE=$(grep -rl "${TODAY}" "JavaScript" --include="README.md" | head -n 1)
           JAVA_FILE=$(grep -rl "${TODAY}" "Java" --include="README.md" | head -n 1)
@@ -60,14 +60,13 @@ jobs:
             SQL_PROBLEM_LINK="-"
           fi
 
-          # README 업데이트 전 들여쓰기 추가 (공백 2칸)
-          INDENT="  "
-          echo "${INDENT}| $DATE | $PYTHON_STATUS | $JAVASCRIPT_STATUS | $JAVA_STATUS | $COMMON_PROBLEM_NAME | [문제 링크]($COMMON_PROBLEM_LINK) | $SQL_STATUS | $SQL_PROBLEM_NAME | [문제 링크]($SQL_PROBLEM_LINK) |" >> README.md
+          # README.md에 들여쓰기 추가 (인용문 방식)
+          echo "> | $DATE | $PYTHON_STATUS | $JAVASCRIPT_STATUS | $JAVA_STATUS | $COMMON_PROBLEM_NAME | [문제 링크]($COMMON_PROBLEM_LINK) | $SQL_STATUS | $SQL_PROBLEM_NAME | [문제 링크]($SQL_PROBLEM_LINK) |" >> README.md
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "docs: Daily README update with indentation ($DATE)" || echo "No changes to commit"
+          git commit -m "docs: Daily README update with quoted indentation ($DATE)" || echo "No changes to commit"
           git push
