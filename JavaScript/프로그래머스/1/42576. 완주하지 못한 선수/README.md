@@ -2,6 +2,13 @@
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42576?language=javascript) 
 
+### 🔥개념 추가 설명🔥
+JavaScript에서는 a || b 연산 시 a가 참 값이면 a를, 그렇지 않으면 b를 반환한다. (단순히 true/false 값을 반환하는 C 언어와는 다름)
+
+또한 JavaScript는 undefined에 관대하여, for 문을 돌릴 때 undefined 값이 있더라도 에러 없이 반복문이 계속 진행된다. (python은 엄격함)
+
+앞으로도 || 연산자의 특성은, "리스트를 순회하며 map이나 객체를 업데이트할 때" 매우 유용하게 사용할 수 있을 것 같다🤗
+
 ### 성능 요약
 
 메모리: 59.6 MB, 시간: 59.74 ms
