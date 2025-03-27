@@ -3,10 +3,7 @@ name: Daily README Update
 on:
   push:
     paths:
-      - 'Python3/**'
-      - 'JavaScript/**'
       - 'Java/**'
-      - 'MySQL/**'
   workflow_dispatch:
 
 jobs:
