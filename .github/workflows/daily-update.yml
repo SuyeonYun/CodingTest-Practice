@@ -24,37 +24,43 @@ jobs:
         run: |
           DATE=$(date '+%m-%d')
 
-          LANGUAGES=("Python3" "JavaScript" "Java" "MySQL")
-          STATUS=("❌" "❌" "❌" "❌")
-          PROBLEM_NAME="-"
-          PROBLEM_LINK="-"
-          SQL_PROBLEM_NAME="-"
-          SQL_PROBLEM_LINK="-"
+          PYTHON_STATUS="❌"
+          JAVASCRIPT_STATUS="❌"
+          JAVA_STATUS="❌"
+          SQL_STATUS="❌"
 
           TODAY=$(date '+%Y년 %m월 %d일')
 
-          idx=0
-          for LANG in "${LANGUAGES[@]}"; do
-            FILE=$(grep -rl "${TODAY}" "${LANG}" --include="README.md" | head -n 1)
+          # 공통 문제는 Python3에서만 찾기
+          PYTHON_FILE=$(grep -rl "${TODAY}" "Python3" --include="README.md" | head -n 1)
+          JAVASCRIPT_FILE=$(grep -rl "${TODAY}" "JavaScript" --include="README.md" | head -n 1)
+          JAVA_FILE=$(grep -rl "${TODAY}" "Java" --include="README.md" | head -n 1)
+          SQL_FILE=$(grep -rl "${TODAY}" "MySQL" --include="README.md" | head -n 1)
 
-            if [[ -n $FILE ]]; then
-              STATUS[$idx]="✅"
+          if [[ -n $PYTHON_FILE ]]; then PYTHON_STATUS="✅"; fi
+          if [[ -n $JAVASCRIPT_FILE ]]; then JAVASCRIPT_STATUS="✅"; fi
+          if [[ -n $JAVA_FILE ]]; then JAVA_STATUS="✅"; fi
+          if [[ -n $SQL_FILE ]]; then SQL_STATUS="✅"; fi
 
-              # 문제 이름 추출
-              PROBLEM_NAME=$(head -n1 "$FILE" | sed 's/^# \[.*\] \(.*\) - .*/\1/')
-              # 문제 링크 추출
-              PROBLEM_LINK=$(grep -m1 -oP '(?<=\().*(?=\))' "$FILE")
+          # 공통 문제 정보 추출 (Python 기준)
+          if [[ -n $PYTHON_FILE ]]; then
+            COMMON_PROBLEM_NAME=$(head -n1 "$PYTHON_FILE" | sed 's/^# \[.*\] \(.*\) - .*/\1/')
+            COMMON_PROBLEM_LINK=$(grep -m1 -oP '(?<=\().*(?=\))' "$PYTHON_FILE")
+          else
+            COMMON_PROBLEM_NAME="-"
+            COMMON_PROBLEM_LINK="-"
+          fi
 
-              if [[ "$LANG" == "MySQL" ]]; then
-                SQL_PROBLEM_NAME=$PROBLEM_NAME
-                SQL_PROBLEM_LINK=$PROBLEM_LINK
-              fi
-            fi
-            idx=$((idx + 1))
-          done
+          # SQL 문제 정보 별도 추출
+          if [[ -n $SQL_FILE ]]; then
+            SQL_PROBLEM_NAME=$(head -n1 "$SQL_FILE" | sed 's/^# \[.*\] \(.*\) - .*/\1/')
+            SQL_PROBLEM_LINK=$(grep -m1 -oP '(?<=\().*(?=\))' "$SQL_FILE")
+          else
+            SQL_PROBLEM_NAME="-"
+            SQL_PROBLEM_LINK="-"
+          fi
 
-          # README에 추가
-          echo "| $DATE | ${STATUS[0]} | ${STATUS[1]} | ${STATUS[2]} | $PROBLEM_NAME | [문제 링크]($PROBLEM_LINK) | ${STATUS[3]} | $SQL_PROBLEM_NAME | [문제 링크]($SQL_PROBLEM_LINK) |" >> README.md
+          echo "| $DATE | $PYTHON_STATUS | $JAVASCRIPT_STATUS | $JAVA_STATUS | $COMMON_PROBLEM_NAME | [문제 링크]($COMMON_PROBLEM_LINK) | $SQL_STATUS | $SQL_PROBLEM_NAME | [문제 링크]($SQL_PROBLEM_LINK) |" >> README.md
 
       - name: Commit and push changes
         run: |
