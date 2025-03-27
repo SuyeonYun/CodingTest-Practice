@@ -14,12 +14,16 @@ jobs:
       - name: Set timezone
         run: sudo timedatectl set-timezone 'Asia/Seoul'
 
-      - name: Bulk Update README.md (from 03-18 to today)
+      - name: Bulk Update README.md with quoted indentation (03-18 to today)
         run: |
           START_DATE="2025-03-18"
           END_DATE=$(date '+%Y-%m-%d')
 
           current_date="$START_DATE"
+
+          # 표 헤더 추가 (맨 처음에만 추가)
+          echo "> | 날짜 | Python | JavaScript | Java | 문제 | 문제 링크 | SQL | 문제 | 문제 링크 |" >> README.md
+          echo "> |------|--------|------------|------|------|-----------|-----|------|-----------|" >> README.md
 
           while [ "$current_date" != "$(date -I -d "$END_DATE + 1 day")" ]; do
             DATE=$(date -d "$current_date" '+%m-%d')
@@ -40,7 +44,6 @@ jobs:
             if [[ -n $JAVA_FILE ]]; then JAVA_STATUS="✅"; fi
             if [[ -n $SQL_FILE ]]; then SQL_STATUS="✅"; fi
 
-            # 공통 문제 정보 추출 (Python 기준)
             if [[ -n $PYTHON_FILE ]]; then
               COMMON_PROBLEM_NAME=$(head -n1 "$PYTHON_FILE" | sed 's/^# \[.*\] \(.*\) - .*/\1/')
               COMMON_PROBLEM_LINK=$(grep -m1 -oP '(?<=\().*(?=\))' "$PYTHON_FILE")
@@ -49,7 +52,6 @@ jobs:
               COMMON_PROBLEM_LINK="-"
             fi
 
-            # SQL 문제 정보 별도 추출
             if [[ -n $SQL_FILE ]]; then
               SQL_PROBLEM_NAME=$(head -n1 "$SQL_FILE" | sed 's/^# \[.*\] \(.*\) - .*/\1/')
               SQL_PROBLEM_LINK=$(grep -m1 -oP '(?<=\().*(?=\))' "$SQL_FILE")
@@ -58,7 +60,7 @@ jobs:
               SQL_PROBLEM_LINK="-"
             fi
 
-            # README.md에 들여쓰기 추가 (인용문 방식)
+            # 들여쓰기 (>) 포함하여 추가
             echo "> | $DATE | $PYTHON_STATUS | $JAVASCRIPT_STATUS | $JAVA_STATUS | $COMMON_PROBLEM_NAME | [문제 링크]($COMMON_PROBLEM_LINK) | $SQL_STATUS | $SQL_PROBLEM_NAME | [문제 링크]($SQL_PROBLEM_LINK) |" >> README.md
 
             # 날짜 증가
@@ -70,5 +72,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "docs: Bulk README update (03-18 to today)" || echo "No changes to commit"
+          git commit -m "docs: Bulk README update with quoted indentation (03-18 to today)" || echo "No changes to commit"
           git push
