@@ -26,7 +26,7 @@ jobs:
           echo "> |------|--------|------------|------|------|-----------|-----|------|-----------|" >> README.md
 
           while [ "$current_date" != "$(date -I -d "$END_DATE + 1 day")" ]; do
-            DATE=$(date -d "$current_date" '+%m-%d')
+            DATE=$(date -d "$current_date" '+%m/%d')
             TODAY=$(date -d "$current_date" '+%Y년 %m월 %d일')
 
             PYTHON_STATUS="❌"
