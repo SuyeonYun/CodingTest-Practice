@@ -27,7 +27,4 @@
 > | 03/27 | ✅ | ✅ | ✅ | 완주하지 못한 선수 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42576?language=python3) | ✅ | NULL 처리하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59410) |
 > | 03/28 | ✅ | ✅ | ✅ | 크레인 인형뽑기 게임 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64061?language=python3) | ✅ | 중복 제거하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59408) |
 > | 03/29 | ✅ | ✅ | ✅ | 비밀지도 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/17681?language=python3) | ✅ | 조건에 맞는 사용자와 총 거래금액 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/164668) |
-> | 03/30 | ❌ | ❌ | ✅ | - | [문제 링크](-) | ❌ | - | [문제 링크](-) |
-> | 03/30 | ✅ | ❌ | ❌ | 내적 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/70128?language=python3) | ❌ | - | [문제 링크](-) |
-> | 03/30 | ✅ | ❌ | ✅ | 내적 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/70128?language=python3) | ❌ | - | [문제 링크](-) |
 > | 03/30 | ✅ | ✅ | ✅ | 내적 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/70128?language=python3) | ✅ | 없어진 기록 찾기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59042) |
