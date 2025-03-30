@@ -30,3 +30,4 @@
 > | 03/30 | ❌ | ❌ | ✅ | - | [문제 링크](-) | ❌ | - | [문제 링크](-) |
 > | 03/30 | ✅ | ❌ | ❌ | 내적 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/70128?language=python3) | ❌ | - | [문제 링크](-) |
 > | 03/30 | ✅ | ❌ | ✅ | 내적 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/70128?language=python3) | ❌ | - | [문제 링크](-) |
+> | 03/30 | ✅ | ✅ | ✅ | 내적 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/70128?language=python3) | ✅ | 없어진 기록 찾기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59042) |
