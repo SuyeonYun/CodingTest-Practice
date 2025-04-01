@@ -29,3 +29,4 @@
 > | 03/29 | ✅ | ✅ | ✅ | 비밀지도 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/17681?language=python3) | ✅ | 조건에 맞는 사용자와 총 거래금액 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/164668) |
 > | 03/30 | ✅ | ✅ | ✅ | 내적 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/70128?language=python3) | ✅ | 없어진 기록 찾기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59042) |
 > | 03/31 | ✅ | ✅ | ✅ | 삼총사 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131705?language=python3) | ✅ | 헤비 유저가 소유한 장소 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/77487) |
+> | 04/01 | ✅ | ✅ | ✅ | 문자열 내 마음대로 정렬하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12915?language=python3) | ✅ | 성분으로 구분한 아이스크림 총 주문량 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/133026) |
