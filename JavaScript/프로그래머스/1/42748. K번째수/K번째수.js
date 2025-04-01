@@ -7,8 +7,8 @@ function solution(array, commands) {
         j = com[1];
         k = com[2] - 1;
         
-        temp = array.slice(i,j);
-        temp.sort((a,b) => a-b);
+        temp = array.slice(i, j);
+        temp.sort((a,b) => a - b);
         answer.push(temp[k])
     }
     return answer;
