@@ -32,3 +32,4 @@
 > | 04/01 | ✅ | ✅ | ✅ | 문자열 내 마음대로 정렬하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12915?language=python3) | ✅ | 성분으로 구분한 아이스크림 총 주문량 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/133026) |
 > | 04/02 | ✅ | ✅ | ✅ | K번째수 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42748?language=python3) | ✅ | 재구매가 일어난 상품과 회원 리스트 구하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131536) |
 > | 04/03 | ✅ | ✅ | ✅ | 소수 만들기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12977?language=python3) | ✅ | 진료과별 총 예약 횟수 출력하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/132202) |
+> | 04/04 | ✅ | ✅ | ✅ | 택배 상자 꺼내기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/389478?language=python3) | ✅ | 자동차 종류 별 특정 옵션이 포함된 자동차 수 구하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/151137) |
