@@ -35,3 +35,4 @@
 > | 04/04 | ✅ | ✅ | ✅ | 택배 상자 꺼내기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/389478?language=python3) | ✅ | 자동차 종류 별 특정 옵션이 포함된 자동차 수 구하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/151137) |
 > | 04/05 | ✅ | ✅ | ✅ | 최댓값과 최솟값 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12939) | ✅ | 자동차 대여 기록에서 대여중 / 대여 가능 여부 구분하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/157340) |
 > | 04/06 | ✅ | ✅ | ✅ | 괄호 회전하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/76502?language=python3) | ✅ | 5월 식품들의 총매출 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131117) |
+> | 04/07 | ✅ | ✅ | ✅ | JadenCase 문자열 만들기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12951) | ✅ | 우유와 요거트가 담긴 장바구니 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/62284) |
