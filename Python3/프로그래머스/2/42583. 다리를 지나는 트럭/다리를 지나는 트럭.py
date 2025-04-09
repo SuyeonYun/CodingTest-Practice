@@ -7,13 +7,15 @@ def solution(bridge_length, weight, truck_weights):
         time += 1
         rest_weight -= bridge[-1]
         rest_weight += bridge[0]
-        
-        bridge = bridge[1:]
+    
+        cur_weight = 0
         if rest_weight >= truck_weights[0]:
-            bridge.append(truck_weights.pop(0))
-        else:
-            bridge.append(0)
+            cur_weight = truck_weights.pop(0)
+            
+        bridge = bridge[1:]
+        bridge.append(cur_weight)
         
-    return time + bridge_length
+    answer = time + bridge_length
+    return answer
 
     
