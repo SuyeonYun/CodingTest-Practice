@@ -38,3 +38,4 @@
 > | 04/07 | ✅ | ✅ | ✅ | JadenCase 문자열 만들기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12951) | ✅ | 우유와 요거트가 담긴 장바구니 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/62284) |
 > | 04/08 | ✅ | ✅ | ✅ | 기능개발 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42586?language=python3#) | ✅ | 즐겨찾기가 가장 많은 식당 정보 출력하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131123) |
 > | 04/09 | ✅ | ✅ | ✅ | 다리를 지나는 트럭 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42583) | ✅ | 카테고리 별 도서 판매량 집계하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/144855) |
+> | 04/10 | ✅ | ✅ | ✅ | 스킬트리 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/49993?language=python3) | ✅ | 대여 기록이 존재하는 자동차 리스트 구하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/157341) |
