@@ -4,12 +4,9 @@ def solution(skill, skill_trees):
     for ex in skill_trees:
         temp = []
         for str in skill:
-            idx = float('inf')
-            if str in ex:
-                idx = ex.find(str)
+            idx = float('inf') if str not in ex else ex.find(str)
             temp.append(idx)
-        print(f"temp:{temp}")
-        print(f"sort temp:{sorted(temp)}\n")
         if temp == sorted(temp):
             answer += 1
+            
     return answer
