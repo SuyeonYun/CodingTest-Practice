@@ -42,3 +42,4 @@
 > | 04/11 | ✅ | ✅ | ✅ | 프로세스 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42587?language=python3) | ✅ | 식품분류별 가장 비싼 식품의 정보 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131116) |
 > | 04/12 | ✅ | ✅ | ✅ | 전화번호 목록 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42577?language=python3) | ✅ | 오랜 기간 보호한 동물(2) | [문제 링크](2) |
 > | 04/13 | ✅ | ✅ | ✅ | 타겟 넘버 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43165) | ✅ | 조건별로 분류하여 주문상태 출력하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131113) |
+> | 04/14 | ✅ | ✅ | ✅ | 게임 맵 최단거리 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/1844?language=python3) | ✅ | 대장균들의 자식의 수 구하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/299305) |
