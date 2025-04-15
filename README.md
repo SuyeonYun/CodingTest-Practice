@@ -43,3 +43,4 @@
 > | 04/12 | ✅ | ✅ | ✅ | 전화번호 목록 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42577?language=python3) | ✅ | 오랜 기간 보호한 동물(2) | [문제 링크](2) |
 > | 04/13 | ✅ | ✅ | ✅ | 타겟 넘버 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43165) | ✅ | 조건별로 분류하여 주문상태 출력하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131113) |
 > | 04/14 | ✅ | ✅ | ✅ | 게임 맵 최단거리 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/1844?language=python3) | ✅ | 대장균들의 자식의 수 구하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/299305) |
+> | 04/15 | ✅ | ✅ | ✅ | 네트워크 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=python3) | ✅ | 대장균의 크기에 따라 분류하기 1 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/299307) |
