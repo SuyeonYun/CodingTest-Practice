@@ -45,3 +45,4 @@
 > | 04/14 | ✅ | ✅ | ✅ | 게임 맵 최단거리 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/1844?language=python3) | ✅ | 대장균들의 자식의 수 구하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/299305) |
 > | 04/15 | ✅ | ✅ | ✅ | 네트워크 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=python3) | ✅ | 대장균의 크기에 따라 분류하기 1 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/299307) |
 > | 04/16 | ✅ | ✅ | ✅ | 더 맵게 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42626?language=python3) | ✅ | 대장균의 크기에 따라 분류하기 2 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/301649) |
+> | 04/17 | ✅ | ✅ | ✅ | 짝지어 제거하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12973) | ✅ | 특정 세대의 대장균 찾기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/301650) |
