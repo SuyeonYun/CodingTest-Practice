@@ -1,15 +1,15 @@
 def solution(s):
     idx = 0
-    st = []
+    stack = []
     
     while idx < len(s):    
-        st.append(s[idx])
+        stack.append(s[idx])
         
-        if len(st) >= 2 and st[-1] == st[-2]:
-            st.pop()
-            st.pop()
+        if len(stack) >= 2 and stack[-1] == stack[-2]:
+            stack.pop()
+            stack.pop()
             
         idx += 1
-    if st:
+    if stack:
         return 0
     return 1
