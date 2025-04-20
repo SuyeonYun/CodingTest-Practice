@@ -47,4 +47,5 @@
 > | 04/16 | ✅ | ✅ | ✅ | 더 맵게 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42626?language=python3) | ✅ | 대장균의 크기에 따라 분류하기 2 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/301649) |
 > | 04/17 | ✅ | ✅ | ✅ | 짝지어 제거하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12973) | ✅ | 특정 세대의 대장균 찾기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/301650) |
 > | 04/18 | ✅ | ✅ | ✅ | H-Index | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42747?language=python3#) | ✅ | 특정 조건을 만족하는 물고기별 수와 최대 길이 구하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/298519) |
+> | 04/19| ✕ | ✕ | ✕ | (자격증 시험으로 pass) | | ✕ | (자격증 시험으로 pass) |  |
 > | 04/20 | ✅ | ✅ | ✅ | 2 x n 타일링 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12900?language=python3) | ✅ | 물고기 종류 별 대어 찾기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/293261) |
