@@ -1,14 +1,14 @@
 class Solution {
-    int answer = 0;
+    int result = 0;
 
     public int solution(int k, int[][] dungeons) {
         boolean[] visited = new boolean[dungeons.length];
         dfs(0, k, dungeons, visited);
-        return answer;
+        return result;
     }
 
     public void dfs(int depth, int fatigue, int[][] dungeons, boolean[] visited) {
-        answer = Math.max(answer, depth);
+        result = Math.max(result, depth);
 
         for (int i = 0; i < dungeons.length; i++) {
             int need = dungeons[i][0];
