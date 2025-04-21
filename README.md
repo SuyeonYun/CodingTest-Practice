@@ -50,3 +50,4 @@
 > | 04/19| ✕ | ✕ | ✕ | (자격증 시험으로 pass) | | ✕ | (자격증 시험으로 pass) |  |
 > | 04/20 | ✅ | ✅ | ✅ | 2 x n 타일링 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12900?language=python3) | ✅ | 물고기 종류 별 대어 찾기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/293261) |
 > | 04/21 | ✅ | ❌ | ✅ | 피로도 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/87946?language=python3) | ✅ | 부서별 평균 연봉 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/284529) |
+> | 04/21 | ✅ | ✅ | ✅ | 피로도 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/87946?language=python3) | ✅ | 부서별 평균 연봉 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/284529) |
