@@ -51,4 +51,4 @@
 > | 04/20 | ✅ | ✅ | ✅ | 2 x n 타일링 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12900?language=python3) | ✅ | 물고기 종류 별 대어 찾기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/293261) |
 > | 04/21 | ✅ | ✅ | ✅ | 피로도 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/87946?language=python3) | ✅ | 부서별 평균 연봉 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/284529) |
 > | 04/22 | ✅ | ✅ | ✅ | 최소직사각형 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/86491?language=python3) | ✅ | 조회수가 가장 많은 중고거래 게시판의 첨부파일 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/164671) |
-> | 04/24 | ✅ | ✅ | ✅ | 카펫 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42842?language=python3) | ✕ | - | [문제 링크](-) |
+> | 04/23 | ✅ | ✅ | ✅ | 카펫 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42842?language=python3) | ✅ | 오랜 기간 보호한 동물(1) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59044) |
