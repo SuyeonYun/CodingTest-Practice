@@ -53,3 +53,4 @@
 > | 04/22 | ✅ | ✅ | ✅ | 최소직사각형 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/86491?language=python3) | ✅ | 조회수가 가장 많은 중고거래 게시판의 첨부파일 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/164671) |
 > | 04/23 | ✅ | ✅ | ✅ | 카펫 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42842?language=python3) | ✅ | 오랜 기간 보호한 동물(1) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59044) |
 > | 04/24 | ✅ | ✅ | ✅ | 주식가격 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42584?language=python3) | ✅ | 대여 횟수가 많은 자동차들의 월별 대여 횟수 구하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/151139) |
+> | 04/25 | ✅ | ✅ | ✅ | 주식가격 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42584?language=python3) | ✅ | 서울에 위치한 식당 목록 출력하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131118) |
