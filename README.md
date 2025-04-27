@@ -55,3 +55,4 @@
 > | 04/24 | ✅ | ✅ | ✅ | 주식가격 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42584?language=python3) | ✅ | 대여 횟수가 많은 자동차들의 월별 대여 횟수 구하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/151139) |
 > | 04/25 | ✅ | ✅ | ✅ | 의상 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42578?language=python3) | ✅ | 서울에 위치한 식당 목록 출력하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131118) |
 > | 04/26 | ✅ | ✅ | ✅ | 가장 큰 수 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42746?language=python3) | ✅ | 저자 별 카테고리 별 매출액 집계하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/144856) |
+> | 04/27 | ✅ | ✅ | ✅ | 튜플 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64065?language=python3) | ✅ | 주문량이 많은 아이스크림들 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/133027) |
