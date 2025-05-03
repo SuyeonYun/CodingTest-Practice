@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'Python/**'
+      - 'Python3/**'
   workflow_dispatch:
 
 jobs:
