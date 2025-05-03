@@ -14,8 +14,8 @@
 > | 03/20 | ✅ | [Silver I] 단지번호붙이기 - 2667 | [문제 링크](https://www.acmicpc.net/problem/2667) |  
 > | 03/21 | ✅ | [Gold IV] 최단경로 - 1753 | [문제 링크](https://www.acmicpc.net/problem/1753) |  
 
-### 📌 03/22 ~ : 매일 문풀
-(※ Python, JavaScript, Java는 공통 1문제, SQL은 별도 1문제 풀이)
+### 📌 03/22 ~ 04/27 : 매일 문풀
+(※ Python, JavaScript, Java는 공통 lv1~2 1문제, SQL은 별도 1문제 풀이)
 
 > | 날짜 | Python | JavaScript | Java | 문제 | 문제 링크 | SQL | 문제 | 문제 링크 |
 > |------|--------|------------|------|------|-----------|-----|------|-----------|
@@ -56,3 +56,7 @@
 > | 04/25 | ✅ | ✅ | ✅ | 의상 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42578?language=python3) | ✅ | 서울에 위치한 식당 목록 출력하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131118) |
 > | 04/26 | ✅ | ✅ | ✅ | 가장 큰 수 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42746?language=python3) | ✅ | 저자 별 카테고리 별 매출액 집계하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/144856) |
 > | 04/27 | ✅ | ✅ | ✅ | 튜플 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64065?language=python3) | ✅ | 주문량이 많은 아이스크림들 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/133027) |
+
+### 📌 05~03 ~ : 매일 문풀
+(※ Python lv3, SQL 각각 1문제 풀이)
+
