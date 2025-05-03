@@ -3,7 +3,7 @@ name: Daily README Update
 on:
   push:
     paths:
-      - 'Java/**'
+      - 'Python/**'
   workflow_dispatch:
 
 jobs:
@@ -22,8 +22,6 @@ jobs:
           DATE=$(date '+%m/%d')
 
           PYTHON_STATUS="✕"
-          JAVASCRIPT_STATUS="✕"
-          JAVA_STATUS="✕"
           SQL_STATUS="✕"
 
           TODAY=$(date '+%Y년 %m월 %d일')
@@ -58,7 +56,7 @@ jobs:
           fi
 
           # README.md에 들여쓰기 추가 (인용문 방식)
-          echo "> | $DATE | $PYTHON_STATUS | $JAVASCRIPT_STATUS | $JAVA_STATUS | $COMMON_PROBLEM_NAME | [문제 링크]($COMMON_PROBLEM_LINK) | $SQL_STATUS | $SQL_PROBLEM_NAME | [문제 링크]($SQL_PROBLEM_LINK) |" >> README.md
+          echo "> | $DATE | $PYTHON_STATUS | $COMMON_PROBLEM_NAME | [문제 링크]($COMMON_PROBLEM_LINK) | $SQL_STATUS | $SQL_PROBLEM_NAME | [문제 링크]($SQL_PROBLEM_LINK) |" >> README.md
 
       - name: Commit and push changes
         run: |
