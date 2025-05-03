@@ -60,3 +60,4 @@
 ### 📌 05/03 ~ : 매일 문풀
 (※ Python lv3, SQL 각각 1문제 풀이)
 
+> | 05/03 | ✅ | 네트워크 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=python3) | ✅ | 연간 평가점수에 해당하는 평가 등급 및 성과금 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/284528) |
