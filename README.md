@@ -18,7 +18,7 @@
 (※ Python, JavaScript, Java는 공통 lv1~2 1문제, SQL은 별도 1문제 풀이)
 
 > | 날짜 | Python | JS | Java | 문제 | 링크 | SQL | 문제 | 링크 |
-> |------|--------|------------|------|------|-----------|-----|------|-----------|
+> |------|--------|------------|------|------|------|-----|------|------|
 > | 03/22 | ✅ | ✅ | ✅ | 문자열 곱하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181940) | ✅ | 이름이 없는 동물의 아이디 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59039) |
 > | 03/23</br>(병가:24일 2문제로 대체) | ✅ | ✅ | ✅ | 로또의 최고 순위와 최저 순위 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/77484?language=python3) | ✅ | 상위 n개 레코드 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59405) |
 > | 03/24 | ✅ | ✅ | ✅ | 가장 가까운 같은 글자 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/142086) | ✅ | 이름이 있는 동물의 아이디 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59407) |
@@ -60,4 +60,6 @@
 ### 📌 05/03 ~ : 매일 문풀
 (※ Python lv3, SQL 각각 1문제 풀이)
 
+> | 날짜 | Python | 문제 | 링크 | SQL | 문제 | 링크 |
+> |------|--------|------|------|-----|------|------|
 > | 05/03 | ✅ | 네트워크 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=python3) | ✅ | 연간 평가점수에 해당하는 평가 등급 및 성과금 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/284528) |
