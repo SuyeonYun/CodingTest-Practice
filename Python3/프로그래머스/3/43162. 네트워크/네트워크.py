@@ -18,7 +18,7 @@ def solution(n, computers):
     
     for i in range(n):
         if not visited[i]:
-            dfs(i, i)  
+            dfs(i, i)        
     return result
     
         
