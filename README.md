@@ -57,6 +57,6 @@
 > | 04/26 | ✅ | ✅ | ✅ | 가장 큰 수 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42746?language=python3) | ✅ | 저자 별 카테고리 별 매출액 집계하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/144856) |
 > | 04/27 | ✅ | ✅ | ✅ | 튜플 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64065?language=python3) | ✅ | 주문량이 많은 아이스크림들 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/133027) |
 
-### 📌 05~03 ~ : 매일 문풀
+### 📌 05/03 ~ : 매일 문풀
 (※ Python lv3, SQL 각각 1문제 풀이)
 
