@@ -29,13 +29,9 @@ jobs:
 
           # 공통 문제 (Python 기준)
           PYTHON_FILE=$(grep -rl "${TODAY}" "Python3" --include="README.md" | head -n 1)
-          JAVASCRIPT_FILE=$(grep -rl "${TODAY}" "JavaScript" --include="README.md" | head -n 1)
-          JAVA_FILE=$(grep -rl "${TODAY}" "Java" --include="README.md" | head -n 1)
           SQL_FILE=$(grep -rl "${TODAY}" "MySQL" --include="README.md" | head -n 1)
 
           if [[ -n $PYTHON_FILE ]]; then PYTHON_STATUS="✅"; fi
-          if [[ -n $JAVASCRIPT_FILE ]]; then JAVASCRIPT_STATUS="✅"; fi
-          if [[ -n $JAVA_FILE ]]; then JAVA_STATUS="✅"; fi
           if [[ -n $SQL_FILE ]]; then SQL_STATUS="✅"; fi
 
           # 공통 문제 정보 추출 (Python 기준)
