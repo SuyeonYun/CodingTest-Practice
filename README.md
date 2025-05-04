@@ -63,3 +63,4 @@
 > | 날짜 | Python | 문제 | 링크 | SQL | 문제 | 링크 |
 > |------|--------|------|------|-----|------|------|
 > | 05/03 | ✅ | 네트워크 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43162?language=python3) | ✅ | 연간 평가점수에 해당하는 평가 등급 및 성과금 조회하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/284528) |
+> | 05/04 | ✅ | 정수 삼각형 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43105) | ✅ | FrontEnd 개발자 찾기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/276035) |
