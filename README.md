@@ -66,3 +66,4 @@
 > | 05/04 | ✅ | 정수 삼각형 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43105) | ✅ | FrontEnd 개발자 찾기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/276035) |
 > | 05/05 | ✅ | 이중우선순위큐 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42628) | ✅ | 특정 기간동안 대여 가능한 자동차들의 대여비용 구하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/157339) |
 > | 05/06 | ✅ | 야근 지수 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12927) | ✅ | 오프라인/온라인 판매 데이터 통합하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131537) |
+> | 05/07 | ✅ | 단어 변환 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43163) | ✅ | 그룹별 조건에 맞는 식당 목록 출력하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131124) |
