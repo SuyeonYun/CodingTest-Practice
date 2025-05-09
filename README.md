@@ -68,3 +68,4 @@
 > | 05/06 | ✅ | 야근 지수 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12927) | ✅ | 오프라인/온라인 판매 데이터 통합하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131537) |
 > | 05/07 | ✅ | 단어 변환 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43163) | ✅ | 그룹별 조건에 맞는 식당 목록 출력하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/131124) |
 > | 05/08 | ✅ | 등굣길 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42898) | ✅ | 입양 시각 구하기(2) | [문제 링크](2) |
+> | 05/09 | ✅ | 숫자 게임 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12987#) | ✅ | 멸종위기의 대장균 찾기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/301651) |
