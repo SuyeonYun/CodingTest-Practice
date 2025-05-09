@@ -1,0 +1,23 @@
+-- 각 세대별 자식이 없는 개체의 수(COUNT)와 세대(GENERATION)를 출력하는 SQL문을 작성해주세요. 이때 결과는 세대에 대해 오름차순 정렬해주세요. 단, 모든 세대에는 자식이 없는 개체가 적어도 1개체는 존재합니다.
+WITH RECURSIVE GENER_TABLE AS
+(
+    SELECT 
+        ID, 
+        1 AS GENERATION
+    FROM ECOLI_DATA
+    WHERE PARENT_ID IS NULL
+    
+    UNION ALL
+    
+    SELECT E.ID, G.GENERATION + 1
+    FROM ECOLI_DATA E 
+    INNER JOIN GENER_TABLE G ON E.PARENT_ID = G.ID
+)
+
+SELECT COUNT(*) AS 'COUNT', GENERATION
+FROM GENER_TABLE 
+WHERE ID NOT IN (
+    SELECT DISTINCT PARENT_ID 
+    FROM ECOLI_DATA 
+    WHERE PARENT_ID IS NOT NULL)
+GROUP BY GENERATION
