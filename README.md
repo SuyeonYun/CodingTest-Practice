@@ -75,5 +75,6 @@
 ## Database
 |  |
 | ------- |
+| [0175-combine-two-tables](https://github.com/SuyeonYun/CodingTest-Practice/tree/master/0175-combine-two-tables) |
 | [0185-department-top-three-salaries](https://github.com/SuyeonYun/CodingTest-Practice/tree/master/0185-department-top-three-salaries) |
 <!---LeetCode Topics End-->
