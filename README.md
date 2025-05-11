@@ -70,3 +70,4 @@
 > | 05/08 | ✅ | 등굣길 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42898) | ✅ | 입양 시각 구하기(2) | [문제 링크](2) |
 > | 05/09 | ✅ | 숫자 게임 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12987#) | ✅ | 멸종위기의 대장균 찾기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/301651) |
 > | 05/10 | ✅ | 최고의 집합 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12938) | ✕ | - | [문제 링크](-) |
+> | 05/11 | ✅ | 단속카메라 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42884) | ✕ | - | [문제 링크](-) |
