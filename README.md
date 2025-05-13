@@ -72,3 +72,4 @@
 > | 05/10 | ✅ | 최고의 집합 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12938) | ✅ | Department Top Three Salaries | [문제 링크](https://leetcode.com/problems/department-top-three-salaries/description/?envType=problem-list-v2&envId=database) |
 > | 05/11 | ✅ | 단속카메라 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42884) | ✅ | Second Highest Salary | [문제 링크](https://leetcode.com/problems/second-highest-salary/submissions/1630782340/?envType=problem-list-v2&envId=database) |
 > | 05/12 | ✅ | 기지국 설치 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12979) | ✅ | Nth Highest Salary | [문제 링크](https://leetcode.com/problems/nth-highest-salary/description/?envType=problem-list-v2&envId=database) |
+> | 05/13 | ✅ | 베스트앨범 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42579?language=python3) | ✕ | - | [문제 링크](-) |
