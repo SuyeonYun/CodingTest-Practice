@@ -1,0 +1,13 @@
+# Write your MySQL query statement below
+
+SELECT 
+    distinct A.num AS ConsecutiveNums
+FROM 
+    Logs A,
+    Logs B,
+    Logs C
+WHERE
+    A.num = B.num
+    AND B.num = C.num
+    AND B.id = A.id + 1
+    AND C.id = B.id + 1
