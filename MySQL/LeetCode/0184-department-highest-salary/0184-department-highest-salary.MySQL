@@ -1,0 +1,13 @@
+# Write your MySQL query statement below
+SELECT 
+    D.name AS Department,
+    E.name AS Employee,
+    E.salary AS Salary
+FROM(
+    SELECT 
+        *,
+        RANK() OVER (PARTITION BY departmentID ORDER BY salary DESC) AS rk
+    FROM
+        Employee
+) E LEFT JOIN Department D ON E.departmentId = D.id
+WHERE rk = 1;
