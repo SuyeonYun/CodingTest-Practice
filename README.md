@@ -74,4 +74,4 @@
 > | 05/12 | ✅ | 기지국 설치 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12979) | ✅ | Nth Highest Salary | [문제 링크](https://leetcode.com/problems/nth-highest-salary/description/?envType=problem-list-v2&envId=database) |
 > | 05/13 | ✅ | 베스트앨범 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42579?language=python3) | ✅ | Rank Scores | [문제 링크](https://leetcode.com/problems/rank-scores/submissions/1632597512/?envType=problem-list-v2&envId=database) |
 > | 05/14 | ✅ | 스티커 모으기(2) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12971) | ✅ | Consecutive Numbers | [문제 링크](https://leetcode.com/problems/consecutive-numbers/?envType=problem-list-v2&envId=database) |
-> | 05/15 | ✅ | 불량 사용자 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64064) | ✕ | - | [문제 링크](-) |
+> | 05/15 | ✅ | 불량 사용자 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64064) | ✅ | Department-Highest_salary | [문제 링크](https://leetcode.com/problems/department-highest-salary/submissions/1634271126/?envType=problem-list-v2&envId=database) |
