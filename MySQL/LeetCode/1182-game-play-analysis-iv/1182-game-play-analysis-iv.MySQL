@@ -1,0 +1,25 @@
+# Write your MySQL query statement below
+WITH cte AS (
+    SELECT 
+        A1.player_id
+    FROM(
+            SELECT 
+                *,
+                RANK() OVER (PARTITION BY player_id ORDER BY event_date ASC) AS rk
+            FROM
+                Activity
+        ) A1, 
+        Activity A2
+    WHERE 
+        A1.rk = 1
+        AND A1.player_id = A2.player_id
+        AND DATEDIFF(A2.event_date, A1.event_date) = 1
+)
+SELECT
+    ROUND(SUM(CASE 1 WHEN player_id IN (SELECT * FROM cte) THEN 1 ELSE 0 END) / COUNT(player_id), 2) AS fraction
+FROM (
+    SELECT 
+        distinct player_id 
+    FROM 
+        Activity
+) A
