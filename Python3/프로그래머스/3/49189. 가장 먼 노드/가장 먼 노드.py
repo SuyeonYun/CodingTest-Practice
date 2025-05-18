@@ -15,14 +15,12 @@ def solution(n, edge):
         arr.sort()
 
     while len(q) > 0:
-        #print(f'q: {q}, dist: {dist}')
         cur = q.pop(0)
         if not visited[cur]:
             visited[cur] = True
             for i in edges[cur]:
                 dist[i] = min(dist[i], dist[cur] + 1)
                 q.append(i)
-        #print(f'q: {q}, dist: {dist}\n')
     
     max_d = max(dist)
     return dist.count(max_d)
