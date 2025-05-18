@@ -10,9 +10,6 @@ def solution(n, edge):
     for s, e in edge: 
         edges[s - 1].append(e - 1)
         edges[e - 1].append(s - 1)
-    
-    for arr in edges:
-        arr.sort()
 
     while len(q) > 0:
         cur = q.pop(0)
