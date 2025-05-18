@@ -77,3 +77,4 @@
 > | 05/15 | ✅ | 불량 사용자 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64064) | ✅ | Department Highest Salary | [문제 링크](https://leetcode.com/problems/department-highest-salary/submissions/1634271126/?envType=problem-list-v2&envId=database) |
 > | 05/16 | ✅ | 보석 쇼핑 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/67258#) | ✅ | Trips And Users | [문제 링크](https://leetcode.com/problems/trips-and-users/submissions/1634683733/?envType=problem-list-v2&envId=database) |
 > | 05/17 | ✅ | 보석 쇼핑(다른 풀이법) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/67258#) | ✅ | Game Play Analysis IV | [문제 링크](https://leetcode.com/problems/game-play-analysis-iv/description/?envType=problem-list-v2&envId=database) |
+> | 05/18 | ✅ | 가장 먼 노드 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/49189) | ✕ | - | [문제 링크](-) |
