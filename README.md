@@ -79,3 +79,4 @@
 > | 05/17 | ✅ | 보석 쇼핑(다른 풀이법) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/67258#) | ✅ | Game Play Analysis IV | [문제 링크](https://leetcode.com/problems/game-play-analysis-iv/description/?envType=problem-list-v2&envId=database) |
 > | 05/18 | ✅ | 가장 먼 노드 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/49189) | ✅ | Managers with at Least 5 Direct Reports | [문제 링크](https://leetcode.com/problems/managers-with-at-least-5-direct-reports/submissions/1636275299/?envType=problem-list-v2&envId=database) |
 > | 05/19 | ✅ | 징검다리 건너기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64062#) | ✅ | Investments in 2016 | [문제 링크](https://leetcode.com/problems/investments-in-2016/submissions/1637855403/?envType=problem-list-v2&envId=database) |
+> | 05/20 | ✅ | 섬 연결하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42861) | ✕ | - | [문제 링크](-) |
