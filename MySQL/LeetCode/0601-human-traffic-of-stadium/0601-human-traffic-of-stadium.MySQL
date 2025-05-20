@@ -1,0 +1,53 @@
+WITH cte AS (
+    SELECT
+        S1.id AS id1,
+        S1.visit_date AS visit_date1,
+        S1.people AS people1,
+        S2.id AS id2,
+        S2.visit_date AS visit_date2,
+        S2.people AS people2,
+        S3.id AS id3,
+        S3.visit_date AS visit_date3,
+        S3.people AS people3
+    FROM 
+        Stadium S1, 
+        Stadium S2, 
+        Stadium S3
+    WHERE
+        S2.id = S1.id + 1
+        AND S3.id = S2.id + 1
+        AND S1.people >= 100
+        AND S2.people >= 100
+        AND S3.people >= 100
+)
+SELECT 
+    id, 
+    visit_date, 
+    people
+FROM (
+    SELECT
+        id1 AS id, 
+        visit_date1 AS visit_date,
+        people1 AS people
+    FROM 
+        cte
+
+    UNION 
+
+    SELECT
+        id2 AS id, 
+        visit_date2 AS visit_date,
+        people2 AS people
+    FROM 
+        cte
+
+    UNION
+
+    SELECT
+        id3 AS id, 
+        visit_date3 AS visit_date,
+        people3 AS people
+    FROM 
+        cte
+) AS result
+ORDER BY visit_date;
