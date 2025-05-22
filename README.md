@@ -81,3 +81,4 @@
 > | 05/19 | ✅ | 징검다리 건너기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64062#) | ✅ | Investments in 2016 | [문제 링크](https://leetcode.com/problems/investments-in-2016/submissions/1637855403/?envType=problem-list-v2&envId=database) |
 > | 05/20 | ✅ | 섬 연결하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42861) | ✅ | Human Traffic of Stadium | [문제 링크](https://leetcode.com/problems/human-traffic-of-stadium/?envType=problem-list-v2&envId=database) |
 > | 05/21 | ✅ | 여행경로 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43164#) | ✅ | Friend Requests II: Who Has the Most Friends | [문제 링크](https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/?envType=problem-list-v2&envId=database) |
+> | 05/22 | ✅ | 연속 펄스 부분 수열의 합 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/161988) | ✕ | - | [문제 링크](-) |
