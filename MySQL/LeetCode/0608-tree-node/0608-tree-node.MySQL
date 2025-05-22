@@ -1,0 +1,45 @@
+-- # Write your MySQL query statement below
+
+SELECT 
+    id,
+    CASE 1
+        WHEN p_id IS NULL THEN 'Root'
+        WHEN id IN (SELECT p_id FROM Tree) THEN 'Inner'
+        ELSE 'Leaf'
+    END AS type
+FROM Tree
+-- WITH RECURSIVE level_table AS 
+-- (
+--     SELECT 
+--         id,
+--         1 AS level
+--     FROM 
+--         Tree
+--     WHERE 
+--         p_id IS NULL
+
+--     UNION ALL
+
+--     SELECT 
+--         T.id,
+--         level + 1
+--     FROM
+--         level_table L JOIN Tree T
+--         ON L.id = T.p_id
+-- ), cte AS
+-- (
+--     SELECT 
+--         level
+--     FROM
+--         level_table
+--     ORDER BY 1 DESC
+--     LIMIT 1
+-- )
+-- SELECT 
+--     id,
+--     CASE 1
+--         WHEN level = 1 THEN 'Root'
+--         WHEN level IN (SELECT * FROM cte) THEN 'Leaf'
+--         ELSE 'Inner'
+--     END AS type
+-- FROM level_table;
