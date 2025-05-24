@@ -84,3 +84,4 @@
 > | 05/22 | ✅ | 연속 펄스 부분 수열의 합 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/161988) | ✅ | Tree Node | [문제 링크](https://leetcode.com/problems/tree-node/submissions/1641089017/?envType=problem-list-v2&envId=database) |
 > | 05/23 | ✅ | 부대복귀 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/132266) | ✅ | Exchange Seats | [문제 링크](https://leetcode.com/problems/exchange-seats/submissions/1641734157/?envType=problem-list-v2&envId=database) |
 > | 05/24 | ✅ | 네트워크(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) | ✅ | Customers Who Bought All Products | [문제 링크](https://leetcode.com/problems/customers-who-bought-all-products/submissions/1642699365/?envType=problem-list-v2&envId=database) |
+> | 05/24 | ✅ | 네트워크 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43162) | ✕ | - | [문제 링크](-) |
