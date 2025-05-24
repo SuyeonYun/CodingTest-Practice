@@ -1,15 +1,14 @@
 def solution(triangle):
+    n = len(triangle)
+    df = [[] for _ in range(n)]
+    df[0].append(triangle[0][0])
     
-    for depth in range(1, len(triangle)):
-        length = len(triangle[depth])
-        before = triangle[depth - 1]
-        for idx in range(length):
-            if idx == 0:
-                triangle[depth][idx] += before[idx]
-            elif idx == length - 1:
-                triangle[depth][idx] += before[idx - 1]
+    for i in range(1, n):
+        for j in range(len(triangle[i])):
+            if j == 0:
+                df[i].append(df[i - 1][j] + triangle[i][j])
+            elif j == len(triangle[i]) - 1:
+                df[i].append(df[i - 1][j - 1] + triangle[i][j])
             else:
-                triangle[depth][idx] += max(before[idx], before[idx - 1])
-    
-    return max(triangle[-1])
-        
+                df[i].append(max(df[i - 1][j - 1], df[i - 1][j]) + triangle[i][j])
+    return max(df[n - 1])
