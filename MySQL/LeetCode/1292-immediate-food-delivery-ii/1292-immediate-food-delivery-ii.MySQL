@@ -1,24 +1,33 @@
 # Write your MySQL query statement below
-WITH rank_table AS
-(
-    SELECT 
-        *,
-        RANK() OVER (PARTITION BY customer_id ORDER BY order_date ASC) AS rk
-    FROM 
-        Delivery
-),
-first_table AS
-(
-    SELECT *
-    FROM 
-        rank_table
-    WHERE
-        rk = 1
-)
-SELECT
-    ROUND(SUM(CASE 1
-            WHEN DATEDIFF(order_date, customer_pref_delivery_date) = 0 THEN 1
-            ELSE 0
-            END) / COUNT(*) * 100, 2) AS immediate_percentage
-FROM 
-    first_table
+-- WITH rank_table AS
+-- (
+--     SELECT 
+--         *,
+--         RANK() OVER (PARTITION BY customer_id ORDER BY order_date ASC) AS rk
+--     FROM 
+--         Delivery
+-- ),
+-- first_table AS
+-- (
+--     SELECT *
+--     FROM 
+--         rank_table
+--     WHERE
+--         rk = 1
+-- )
+-- SELECT
+--     ROUND(SUM(CASE 1
+--             WHEN DATEDIFF(order_date, customer_pref_delivery_date) = 0 THEN 1
+--             ELSE 0
+--             END) / COUNT(*) * 100, 2) AS immediate_percentage
+-- FROM 
+--     first_table
+
+# Write your MySQL query statement below
+Select round(avg(order_date = customer_pref_delivery_date)*100, 2) as immediate_percentage
+from Delivery
+where (customer_id, order_date) in (
+  Select customer_id, min(order_date) 
+  from Delivery
+  group by customer_id
+);
