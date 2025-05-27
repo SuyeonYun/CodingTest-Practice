@@ -1,21 +1,15 @@
 import heapq
 
 def solution(n, works):
-    if sum(works) <= n:
-        return 0
-    
-    works = list(x * (-1) for x in works)
+    works = [-i for i in works]
     heapq.heapify(works)
+    for i in range(n):
+        if len(works) == 0:
+            return 0
+        temp = heapq.heappop(works)
+        temp += 1
+        if temp != 0:
+            heapq.heappush(works, temp)
     
-    while n > 0:
-        first = heapq.heappop(works)
-        second = works[0]
-        cnt = second - first + 1
-        if cnt >= n:
-            cnt = n
-            
-        heapq.heappush(works, first + cnt)
-        n -= cnt
-            
-    return sum(x**2 for x in works)
-                        
+    answer = sum([i**2 for i in works])
+    return answer
