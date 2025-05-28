@@ -1,22 +1,21 @@
+from collections import deque
+
 def solution(begin, target, words):
-    depth = 0
-    cur = begin
-    queue = [[cur, 0]]
+    q = deque()
+    q.append((begin, 0))
     
     if target not in words:
         return 0
     
-    while queue:        
-        cur = queue.pop(0)
-
-        depth = cur[1] + 1
+    while len(q) != 0:
+        cur, depth = q.popleft()
+        if cur == target:
+            return depth
         for word in words:
-            cnt = 0
-            for i in range(len(target)):
-                if word[i] != cur[0][i]:
-                    cnt += 1
-            if cnt == 1:
-                if word == target:
-                    return depth
-                queue.append([word, depth])
+            t_cnt = 0
+            for i in range(len(word)):
+                if cur[i] != word[i]:
+                    t_cnt += 1
+            if t_cnt == 1:
+                q.append((word, depth + 1))
     return 0
