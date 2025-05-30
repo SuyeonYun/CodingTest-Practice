@@ -1,17 +1,12 @@
 def solution(A, B):
-    answer = 0
+    A.sort(reverse = True)
+    B.sort(reverse = True)
     
-    A.sort()
-    B.sort()
-    
-    a_idx = 0
-    b_idx = 0
-    while a_idx < len(A) and b_idx < len(B):
-        if A[a_idx] < B[b_idx]:
-            answer += 1
-            a_idx += 1
-            b_idx += 1
-        else:
-            b_idx += 1
+    idx_a, idx_b, count = 0, 0, 0
+    while idx_a < len(A):
+        if B[idx_b] > A[idx_a]:
+            count += 1
+            idx_b += 1
+        idx_a += 1
 
-    return answer
+    return count
