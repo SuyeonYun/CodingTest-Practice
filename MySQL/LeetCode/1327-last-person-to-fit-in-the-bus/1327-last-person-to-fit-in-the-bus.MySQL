@@ -4,6 +4,7 @@ WITH cte AS
     SELECT
         Q1.turn,
         Q1.person_id,
+        Q1.person_name,
         SUM(Q2.weight) AS total
     FROM 
         Queue Q1
@@ -15,17 +16,10 @@ WITH cte AS
 )
 SELECT
     person_name
-FROM 
-    Queue
+FROM
+    cte
 WHERE
-    person_id = (
-        SELECT 
-            person_id 
-        FROM
-            cte
-        WHERE
-            total <= 1000
-        ORDER BY total DESC
-        LIMIT 1
-    )
+    total <= 1000
+ORDER BY total DESC
+LIMIT 1;
 
