@@ -1,0 +1,31 @@
+# Write your MySQL query statement below
+WITH cte AS 
+(
+    SELECT
+        Q1.turn,
+        Q1.person_id,
+        SUM(Q2.weight) AS total
+    FROM 
+        Queue Q1
+        JOIN Queue Q2
+        ON Q2.turn <= Q1.turn
+    GROUP BY
+        Q1.turn
+    ORDER BY 1
+)
+SELECT
+    person_name
+FROM 
+    Queue
+WHERE
+    person_id = (
+        SELECT 
+            person_id 
+        FROM
+            cte
+        WHERE
+            total <= 1000
+        ORDER BY total DESC
+        LIMIT 1
+    )
+
