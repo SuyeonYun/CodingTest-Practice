@@ -89,4 +89,4 @@
 > | 05/27 | ✅ | 야근 지수(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12927) | ✅ | Product Price at a Given Date | [문제 링크](https://leetcode.com/problems/product-price-at-a-given-date/submissions/1645593641/?envType=problem-list-v2&envId=database) |
 > | 05/28 | ✅ | 단어 변환(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43163) | ✅ | Immediate Food Delivery II | [문제 링크](https://leetcode.com/problems/immediate-food-delivery-ii/description/?envType=problem-list-v2&envId=database) |
 > | 05/29 | ✅ | 등굣길(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42898) | ✅ | Monthly Transactions I | [문제 링크](https://leetcode.com/problems/monthly-transactions-i/submissions/1647521176/?envType=problem-list-v2&envId=database) |
-> | 05/30 | ✅ | 숫자 게임 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12987) | ✕ | - | [문제 링크](-) |
+> | 05/30 | ✅ | 숫자 게임(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12987) | ✅ | Last Person to Fit in the Bus | [문제 링크](https://leetcode.com/problems/last-person-to-fit-in-the-bus/?envType=problem-list-v2&envId=database) |
