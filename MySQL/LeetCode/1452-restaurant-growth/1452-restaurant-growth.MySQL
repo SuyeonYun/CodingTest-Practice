@@ -1,0 +1,28 @@
+# Write your MySQL query statement below
+WITH cte AS
+(
+    SELECT 
+        visited_on,
+        SUM(amount) AS amount
+    FROM 
+        Customer
+    GROUP BY visited_on
+), sum_table AS
+(
+    SELECT
+        visited_on,
+        SUM(1) OVER (
+            ORDER BY visited_on ASC RANGE BETWEEN INTERVAL 6 DAY PRECEDING AND CURRENT ROW
+        ) AS days,        
+        SUM(amount) OVER (
+            ORDER BY visited_on ASC RANGE BETWEEN INTERVAL 6 DAY PRECEDING AND CURRENT ROW
+        ) AS amount
+    FROM 
+        cte
+)
+SELECT 
+    visited_on,
+    amount,
+    ROUND(amount / 7, 2) AS average_amount
+FROM sum_table
+WHERE days = 7
