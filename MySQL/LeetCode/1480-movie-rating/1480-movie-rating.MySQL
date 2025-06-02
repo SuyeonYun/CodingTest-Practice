@@ -1,0 +1,53 @@
+# Write your MySQL query statement below
+WITH rank_user AS
+(
+    SELECT
+        user_id,
+        DENSE_RANK() OVER (ORDER BY COUNT(*) DESC) AS u_rk
+    FROM 
+        MovieRating
+    GROUP BY user_id
+),
+rank_movie AS
+(
+    SELECT
+        movie_id,
+        DENSE_RANK() OVER (ORDER BY AVG(rating) DESC) AS m_rk
+    FROM 
+        MovieRating
+    WHERE 
+        created_at BETWEEN '2020-02-01' AND '2020-02-28'
+    GROUP BY movie_id
+),
+highest_user AS
+(
+    SELECT 
+        name
+    FROM 
+        rank_user
+        LEFT JOIN Users
+        USING(user_id)
+    WHERE u_rk = 1
+    ORDER BY name ASC
+    LIMIT 1
+),
+highest_movie AS
+(
+    SELECT 
+        title
+    FROM 
+        rank_movie
+        LEFT JOIN Movies
+        USING(movie_id)
+    WHERE m_rk = 1
+    ORDER BY title ASC
+    LIMIT 1
+)
+SELECT name AS results
+FROM highest_user
+
+UNION ALL
+
+SELECT title AS results
+FROM highest_movie
+            
