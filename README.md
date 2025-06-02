@@ -92,3 +92,4 @@
 > | 05/30 | ✅ | 숫자 게임(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12987) | ✅ | Last Person to Fit in the Bus | [문제 링크](https://leetcode.com/problems/last-person-to-fit-in-the-bus/?envType=problem-list-v2&envId=database) |
 > | 05/31 | ✅ | 최고의 집합(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12938) | ✅ | Restaurant Growth | [문제 링크](https://leetcode.com/problems/restaurant-growth/submissions/1649481524/?envType=problem-list-v2&envId=database) |
 > | 06/02 | ✅ | 단속카메라 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42884) | ✕ | - | [문제 링크](-) |
+> | 06/02 | ✅ | 기지국 설치 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12979) | ✕ | - | [문제 링크](-) |
