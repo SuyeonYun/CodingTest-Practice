@@ -17,4 +17,5 @@ def solution(sticker):
     for i in range(2, n):
         dp2.append(max(dp2[i - 2] + sticker[i], dp2[i - 1]))
 
-    return max(dp1[-1], dp2[-1])
+    answer = max(dp1[-1], dp2[-1])
+    return answer
