@@ -96,3 +96,4 @@
 > | 06/03 | ✅ | 베스트앨범(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42579) | ✅ | Count Salary Categories | [문제 링크](https://leetcode.com/problems/count-salary-categories/?envType=problem-list-v2&envId=database) |
 > | 06/04 | ✅ | 스티커 모으기(2)(재풀이) | [문제 링크](2) | ✅ | Confirmation Rate | [문제 링크](https://leetcode.com/problems/confirmation-rate/submissions/1653466375/?envType=problem-list-v2&envId=database) |
 > | 06/06 | ✅ | 스티커 모으기(2) | [문제 링크](2) | ✕ | - | [문제 링크](-) |
+> | 06/06 | ✅ | 불량 사용자 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64064) | ✕ | - | [문제 링크](-) |
