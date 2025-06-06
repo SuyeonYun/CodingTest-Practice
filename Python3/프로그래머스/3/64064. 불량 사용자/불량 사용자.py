@@ -1,33 +1,41 @@
-import re
+import copy
 
 def solution(user_id, banned_id):
-    user_dict = {}
-    idx = 0
+    u_dict = {}
+    b_dict = {}
+    u_idx = 1
     for user in user_id:
-        user_dict[user] = idx
-        idx += 1
+        u_dict[user] = u_idx
+        u_idx += 1
     
-    candidate = [[] * l for l in range(len(banned_id))]
-    for i in range(len(banned_id)):
-        bid = banned_id[i]
-        for uid in user_id:
-            if re.fullmatch(re.sub(r'\*', '[a-z0-9]', bid), uid):
-                candidate[i].append(user_dict[uid])
+    b_idx = 0
+    for ban in banned_id:
+        b_idx += 1
+        b_dict[b_idx] = []
+        for user in user_id:
+            if len(user) == len(ban):
+                TF = True
+                for i in range(len(user)):
+                    if ban[i] == '*':
+                        continue
+                    if user[i] != ban[i]:
+                        TF = False
+                        break
+                if TF:
+                    b_dict[b_idx].append(u_dict[user])
     
-    answer_set = set()
-    def comb(depth, idx, t_set):
-        t_set.add(candidate[depth][idx])
-        
-        if len(t_set) == depth + 1:
-            if depth == len(candidate) - 1:
-                answer_set.add(frozenset(t_set))
-            else:
-                for i in range(len(candidate[depth + 1])):
-                    comb(depth + 1, i, set(t_set))   
-        else:
-            return
+    answer_set = set()          
+    def comb(idx, s):
+        nonlocal answer_set
+        for u in b_dict[idx]:
+            temp = copy.deepcopy(s)
+            temp.add(u)
+            if len(temp) == len(s) + 1:
+                if idx == b_idx:
+                    answer_set.add(frozenset(temp))
+                else:
+                    comb(idx + 1, temp)
+        return
             
-    for i in range(len(candidate[0])):
-        comb(0, i, set())
-
-    return(len(answer_set))
+    comb(1, set())
+    return len(answer_set)
