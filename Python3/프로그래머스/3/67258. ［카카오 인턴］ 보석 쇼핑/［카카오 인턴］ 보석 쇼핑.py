@@ -1,23 +1,22 @@
-from collections import defaultdict
-
 def solution(gems):
-    # 전체 보석 종류 수
-    unique_total = len(set(gems))
-    counts = defaultdict(int)
-    answer = [1, len(gems)]  # 최댓값으로 초기화
-    start = 0
+    answer = [1, len(gems)]
+    g_dict = {}
+    for gem in gems:
+        g_dict[gem] = 0
     
-    for end, gem in enumerate(gems):
-        counts[gem] += 1
-        # 현재 윈도우에 모든 종류가 포함되면 start를 이동시키며 최소 구간 찾기
-        if len(counts) == unique_total:
-            while start < end:
-                if counts[gems[start]] > 1:
-                    counts[gems[start]] -= 1
-                    start += 1
-                else:
+    s = 0
+    g_set = set()
+    for e in range(len(gems)):
+        g_dict[gems[e]] += 1
+        g_set.add(gems[e])
+        if len(g_set) == len(g_dict):
+            for i in range(s, e + 1):
+                if g_dict[gems[s]] == 1:
+                    if answer[1] - answer[0] > e - s:
+                        answer = [s + 1, e + 1]
                     break
-            # 구간이 더 짧으면 갱신
-            if end - start < answer[1] - answer[0]:
-                answer = [start + 1, end + 1]
+                else:
+                    g_dict[gems[s]] -= 1
+                    s += 1
+                
     return answer
