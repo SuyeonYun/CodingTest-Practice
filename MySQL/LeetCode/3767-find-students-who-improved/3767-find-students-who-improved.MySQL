@@ -1,0 +1,55 @@
+# Write your MySQL query statement below
+WITH cte AS
+(
+    SELECT
+        student_id,
+        subject,
+        MIN(exam_date) AS first,
+        MAX(exam_date) AS latest
+    FROM
+        Scores
+    GROUP BY
+        student_id,
+        subject
+),first_table AS
+(
+    SELECT 
+        student_id,
+        subject,
+        score AS first_score
+    FROM 
+        Scores S
+        LEFT JOIN cte
+        USING(student_id, subject)
+    WHERE
+        S.exam_date = cte.first
+    GROUP BY
+        student_id,
+        subject
+), latest_table AS
+(
+    SELECT 
+        student_id,
+        subject,
+        score AS latest_score
+    FROM 
+        Scores S
+        LEFT JOIN cte
+        USING(student_id, subject)
+    WHERE
+        S.exam_date = cte.latest
+    GROUP BY
+        student_id,
+        subject 
+)
+SELECT
+    *
+FROM 
+    first_table
+    JOIN latest_table
+    USING(student_id, subject)
+WHERE
+    first_score < latest_score
+ORDER BY
+    1, 2 ASC;
+
