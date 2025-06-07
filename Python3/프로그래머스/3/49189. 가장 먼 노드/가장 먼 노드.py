@@ -1,23 +1,28 @@
-def solution(n, edge):
-    q = []
-    edges = [[] * x for x in range(n)]
-    visited = [False * x for x in range(n)]
-    dist = [float('inf') * x for x in range(n)]
-    
-    q.append(0)
-    dist[0] = 0
-    
-    for s, e in edge: 
-        edges[s - 1].append(e - 1)
-        edges[e - 1].append(s - 1)
+from collections import deque
 
-    while len(q) > 0:
-        cur = q.pop(0)
-        if not visited[cur]:
-            visited[cur] = True
-            for i in edges[cur]:
-                dist[i] = min(dist[i], dist[cur] + 1)
-                q.append(i)
+def solution(n, edge):
+    start = 0
+    dist = [-1 for _ in range(n)]
+    info = [[] for _ in range(n)]
+    visited = [False for _ in range(n)]
+    queue = deque()
+    queue.append((start, start))
     
-    max_d = max(dist)
-    return dist.count(max_d)
+    for x, y in edge:
+        info[x - 1].append(y - 1)
+        info[y - 1].append(x - 1)
+    
+    while queue:
+        prev, cur = queue.popleft()
+        if visited[cur]:
+            continue
+        visited[cur] = True
+        dist[cur] = dist[prev] + 1
+        
+        for i in info[cur]:
+            if not visited[i]:
+                queue.append((cur, i))
+    
+    max_dist = max(dist)
+    answer = dist.count(max_dist)
+    return answer
