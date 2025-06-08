@@ -98,3 +98,4 @@
 > | 06/05 | ✅ | 불량 사용자(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64064) | ✅ | Odd and Even Transactions | [문제 링크](https://leetcode.com/problems/odd-and-even-transactions/description/?envType=problem-list-v2&envId=database) |
 > | 06/06 | ✅ | 보석 쇼핑(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/67258) | ✅ | First Letter Capitalization II | [문제 링크](https://leetcode.com/problems/first-letter-capitalization-ii/description/?envType=problem-list-v2&envId=database) |
 > | 06/07 | ✅ | 가장 먼 노드 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/49189) | ✅ | Find Students Who Improved | [문제 링크](https://leetcode.com/problems/find-students-who-improved/submissions/1656556734/?envType=problem-list-v2&envId=database) |
+> | 06/08 | ✅ | 징검다리 건너기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64062) | ✕ | - | [문제 링크](-) |
