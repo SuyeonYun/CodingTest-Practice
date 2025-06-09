@@ -1,0 +1,26 @@
+# Write your MySQL query statement below
+WITH free AS
+(
+    SELECT
+        user_id,
+        ROUND(AVG(activity_duration), 2) AS "trial_avg_duration"
+    FROM
+        UserActivity
+    WHERE activity_type = 'free_trial'
+    GROUP BY user_id
+), paid AS
+(
+    SELECT
+        user_id,
+        ROUND(AVG(activity_duration), 2) AS "paid_avg_duration"
+    FROM
+        UserActivity
+    WHERE activity_type = 'paid'
+    GROUP BY user_id
+)
+SELECT *
+FROM
+    free f
+    INNER JOIN paid p
+    USING(user_id)
+ORDER BY 1 ASC;
