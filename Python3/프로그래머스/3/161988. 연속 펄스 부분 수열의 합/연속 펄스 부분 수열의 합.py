@@ -1,24 +1,27 @@
 def solution(sequence):
-    sum_r = 0
-    max_r = 0
-    min_r = 1
+    max_sum = 0
+    min_sum = 0
+    min_temp = 0
+    max_temp = 0
+    
     for i in range(len(sequence)):
         if i % 2 == 0:
             sequence[i] *= -1
             
     for s in sequence:
-        sum_r += s
-        if sum_r < 0:
-            sum_r = 0
-        if sum_r > max_r:
-            max_r = sum_r
+        max_temp += s
+        if max_temp < 0:
+            max_sum = 0
+            max_temp = 0
+        elif max_sum < max_temp:
+            max_sum = max_temp
+        
+        min_temp -= s
+        if min_temp < 0:
+            min_sum = 0
+            min_temp = 0
+        elif min_sum < min_temp:
+            min_sum = min_temp
             
-    sum_r = 0
-    for s in sequence:
-        sum_r += s
-        if sum_r > 0:
-            sum_r = 0
-        if sum_r < min_r:
-            min_r = sum_r  
-            
-    return max(-min_r, max_r)
+    answer = max(min_sum, max_sum)
+    return answer
