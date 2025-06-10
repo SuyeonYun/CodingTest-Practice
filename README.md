@@ -100,3 +100,4 @@
 > | 06/07 | ✅ | 가장 먼 노드(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/49189) | ✅ | Find Students Who Improved | [문제 링크](https://leetcode.com/problems/find-students-who-improved/submissions/1656556734/?envType=problem-list-v2&envId=database) |
 > | 06/08 | ✅ | 징검다리 건너기(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/64062) | ✅ | DNA Pattern Recognition | [문제 링크](https://leetcode.com/problems/dna-pattern-recognition/submissions/1657219580/?envType=problem-list-v2&envId=database) |
 > | 06/10 | ✅ | 섬 연결하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42861) | ✕ | - | [문제 링크](-) |
+> | 06/10 | ✅ | 섬 연결하기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42861) | ✕ | - | [문제 링크](-) |
