@@ -1,33 +1,30 @@
 import heapq
 
 def solution(n, costs):
-    info = []
+    queue = []
+    start = 0
+    answer = 0
+    visited = [False for _ in range(n)]
+    
+    info = [[float('inf') for _ in range(n)] for _ in range(n)]
+    for x, y, cost in costs:
+        info[x][y] = cost
+        info[y][x] = cost
     
     for i in range(n):
-        info.append([])
-        for j in range(n):
-            if i == j:
-                info[i].append(0)
-            else:
-                info[i].append(-1)
+        info[i][i] = 0
     
-    for i, j, k in costs:
-        info[i][j] = k
-        info[j][i] = k
+    heapq.heappush(queue, (info[start][start], start, start))
     
-    result = []
-    heap = [(0, 0, 0)]
-    visited = [False] * n
-
-    while len(result) < n:
-        cur, s, e = heapq.heappop(heap)
-        if visited[e]:
+    while queue:
+        cur_dist, start, end = heapq.heappop(queue)
+        if visited[end]:
             continue
-        result.append(cur)
-        visited[e] = True
-
+        answer += info[start][end]
+        visited[end] = True
         for i in range(n):
-            if not visited[i] and 0 < info[e][i]:
-                heapq.heappush(heap, (info[e][i], e, i))
+            if not visited[i] and info[end][i] != float('inf'):
+                heapq.heappush(queue, (info[end][i], end, i))
 
-    return sum(result)
+    return answer
+    
