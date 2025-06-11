@@ -1,0 +1,42 @@
+# Write your MySQL query statement below
+WITH cte AS
+(
+    SELECT
+        employee_id,
+        review_date,
+        rating
+    FROM
+        (
+            SELECT 
+                *,
+                RANK() OVER (PARTITION BY employee_id ORDER BY review_date DESC) AS rk
+            FROM
+                performance_reviews
+        ) rk_table
+    WHERE rk <= 3
+), score_table AS
+(
+    SELECT 
+        p1.employee_id,
+        p3.rating - p1.rating AS improvement_score
+    FROM
+        cte p1,
+        cte p2,
+        cte p3
+    WHERE
+        p1.employee_id = p2.employee_id
+        AND p2.employee_id = p3.employee_id
+        AND p1.review_date < p2.review_date
+        AND p2.review_date < p3.review_date
+        AND p1.rating < p2.rating
+        AND p2.rating < p3.rating
+)
+SELECT
+    employee_id,
+    name,
+    improvement_score
+FROM 
+    score_table
+    LEFT JOIN employees
+    USING (employee_id)
+ORDER BY 3 DESC, 2 ASC;
