@@ -1,0 +1,43 @@
+# Write your MySQL query statement below
+WITH cte AS
+(
+    SELECT
+        s.product_id,
+        s.quantity,
+        s.price,
+        p.category,
+        CASE 1
+            WHEN MONTH(sale_date) IN (12, 1, 2) THEN "Winter"
+            WHEN MONTH(sale_date) IN (3, 4, 5) THEN "Spring"
+            WHEN MONTH(sale_date) IN (6, 7, 8) THEN "Summer"
+            ELSE "Fall"
+        END AS season
+    FROM
+        sales s
+        LEFT JOIN products p
+        USING(product_id)
+), count_table AS
+(
+    SELECT
+        season,
+        category,
+        SUM(quantity) AS total_quantity,
+        SUM(quantity * price) AS total_revenue
+    FROM
+        cte
+    GROUP BY season, category
+)
+SELECT
+    season,
+    category,
+    total_quantity,
+    total_revenue
+FROM
+    (
+        SELECT
+            *,
+            RANK() OVER (PARTITION BY season ORDER BY total_quantity DESC, total_revenue DESC) AS rk
+        FROM
+            count_table
+    ) rank_table
+WHERE rk = 1
