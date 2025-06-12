@@ -102,3 +102,4 @@
 > | 06/09 | ✅ | 섬 연결하기(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/42861) | ✅ | Analyze Subscription Conversion  | [문제 링크](https://leetcode.com/problems/analyze-subscription-conversion/description/?envType=problem-list-v2&envId=database) |
 > | 06/10 | ✅ | 연속 펄스 부분 수열의 합(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/161988) | ✅ | Find Product Recommendation Pairs | [문제 링크](https://leetcode.com/problems/find-product-recommendation-pairs/submissions/1659142609/?envType=problem-list-v2&envId=database) |
 > | 06/11 | ✅ | 여행경로(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43164) | ✅ | Find Consistently Improving Employees | [문제 링크](https://leetcode.com/problems/find-consistently-improving-employees/submissions/1660296874/?envType=problem-list-v2&envId=database) |
+> | 06/12 | ✅ | 부대복귀 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/132266) | ✕ | - | [문제 링크](-) |
