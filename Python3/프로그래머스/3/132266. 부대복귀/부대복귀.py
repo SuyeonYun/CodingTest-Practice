@@ -1,29 +1,30 @@
 from collections import deque
 
 def solution(n, roads, sources, destination):
-    q = deque()
+    start = destination - 1
     answer = []
-    visited = [False for _ in range(n)]
+    queue = deque()
     dist = [-1 for _ in range(n)]
+    visited = [False for _ in range(n)]
+    
     info = [[] for _ in range(n)]
     for x, y in roads:
         info[x - 1].append(y - 1)
         info[y - 1].append(x - 1)
     
-    cur = destination - 1
-    prev = destination - 1
-    q.append((prev, cur))
-    while len(q) > 0 :
-        prev, cur = q.popleft()
+    queue.append((start, start))
+    while queue:
+        prev, cur = queue.popleft()
         if visited[cur]:
             continue
         visited[cur] = True
         dist[cur] = dist[prev] + 1
-        for i in info[cur]:
-            if not visited[i]:
-                q.append((cur, i))
-                
+        
+        for idx in info[cur]:
+            if not visited[idx]:
+                queue.append((cur, idx))
+    
     for s in sources:
         answer.append(dist[s - 1])
-
+        
     return answer
