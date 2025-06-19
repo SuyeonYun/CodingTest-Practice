@@ -103,4 +103,5 @@
 > | 06/10 | ✅ | 연속 펄스 부분 수열의 합(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/161988) | ✅ | Find Product Recommendation Pairs | [문제 링크](https://leetcode.com/problems/find-product-recommendation-pairs/submissions/1659142609/?envType=problem-list-v2&envId=database) |
 > | 06/11 | ✅ | 여행경로(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43164) | ✅ | Find Consistently Improving Employees | [문제 링크](https://leetcode.com/problems/find-consistently-improving-employees/submissions/1660296874/?envType=problem-list-v2&envId=database) |
 > | 06/12 | ✅ | 부대복귀(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/132266) | ✅ | Seasonal Sales Analysis | [문제 링크](https://leetcode.com/problems/seasonal-sales-analysis/?envType=problem-list-v2&envId=database) |
-> | 06/13 ~ 06/19 | ✅ | 네이버 코테 기출 풀이 | [문제 링크](-) | ✕ |  | [문제 링크](-) |
+> | 06/13 ~ 06/17 | ✅ | 네이버 코테 기출 풀이 | [문제 링크](-) | ✕ |  | [문제 링크](-) |
+> | 06/18 ~ 06/22 | ✕ | 오픽 시험 공부 | [문제 링크](-) | ✕ |  | [문제 링크](-) |
