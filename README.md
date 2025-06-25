@@ -104,8 +104,8 @@
 > | 06/11 | ✅ | 여행경로(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43164) | ✅ | Find Consistently Improving Employees | [문제 링크](https://leetcode.com/problems/find-consistently-improving-employees/submissions/1660296874/?envType=problem-list-v2&envId=database) |
 > | 06/12 | ✅ | 부대복귀(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/132266) | ✅ | Seasonal Sales Analysis | [문제 링크](https://leetcode.com/problems/seasonal-sales-analysis/?envType=problem-list-v2&envId=database) |
 
-### 📌 06/13 ~ 06/17 : 네이버 코태 기출 풀이(노션에 작성)
-### 📌 06/18 ~ 06/23 : 오픽 공부 및 휴식
+### 📌 06/13 ~ 06/17 : 네이버 코테 기출 풀이(노션에 작성)
+### 📌 06/18 ~ 06/22 : 오픽 공부
 
-### 📌 06/24 ~ : 매일 문풀
-(※ SQL 문제 고갈로, Python lv3 1문제 풀이)
+### 📌 06/23 ~ 07/14 : 계절학기 및 ucpc, scpc 준비
+(※ 월~목 취업 준비, 금~일 Python lv3 1문제 풀이)
