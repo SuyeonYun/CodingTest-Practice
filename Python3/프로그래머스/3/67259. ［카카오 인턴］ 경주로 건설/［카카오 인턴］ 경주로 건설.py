@@ -2,51 +2,34 @@ from collections import deque
 
 def solution(board):
     n = len(board)
+    dx = [1, -1, 0, 0]
+    dy = [0, 0, 1, -1]
     queue = deque()
-    queue.append((0, 0, 0, ''))
+    queue.append((0, 0, 0, -1))
     total_cost = [[[float('inf'), float('inf')] for _ in range(n)] for _ in range(n)]
     
     while queue:
         x, y, cost, prev_direction = queue.popleft()
         
-        if 0 <= x - 1 < n and board[x - 1][y] == 0:
-            if prev_direction == 'y':
-                if total_cost[x - 1][y][0] > cost + 600:
-                    total_cost[x - 1][y][0] = cost + 600
-                    queue.append((x - 1, y, cost + 600, 'x'))
+        for i in range(4):
+            nx = x + dx[i]
+            ny = y + dy[i]
+            
+            if i <= 1:
+                diff = 1
+                nd = 0
             else:
-                if total_cost[x - 1][y][0] > cost + 100:
-                    total_cost[x - 1][y][0] = cost + 100
-                    queue.append((x - 1, y, cost + 100, 'x'))
-        
-        if 0 <= x + 1 < n and board[x + 1][y] == 0:
-            if prev_direction == 'y':
-                if total_cost[x + 1][y][0] > cost + 600:
-                    total_cost[x + 1][y][0] = cost + 600
-                    queue.append((x + 1, y, cost + 600, 'x'))
-            else:
-                if total_cost[x + 1][y][0] > cost + 100:
-                    total_cost[x + 1][y][0] = cost + 100
-                    queue.append((x + 1, y, cost + 100, 'x'))
-                
-        if 0 <= y - 1 < n and board[x][y - 1] == 0:
-            if prev_direction == 'x':
-                if total_cost[x][y - 1][1] > cost + 600:
-                    total_cost[x][y - 1][1] = cost + 600
-                    queue.append((x, y - 1, cost + 600, 'y'))
-            else:
-                if total_cost[x][y - 1][1] > cost + 100:
-                    total_cost[x][y - 1][1] = cost + 100
-                    queue.append((x, y - 1, cost + 100, 'y'))
-                
-        if 0 <= y + 1 < n and board[x][y + 1] == 0:
-            if prev_direction == 'x':
-                if total_cost[x][y + 1][1] > cost + 600:
-                    total_cost[x][y + 1][1] = cost + 600
-                    queue.append((x, y + 1, cost + 600, 'y'))
-            else:
-                if total_cost[x][y + 1][1] > cost + 100:
-                    total_cost[x][y + 1][1] = cost + 100
-                    queue.append((x, y + 1, cost + 100, 'y'))
+                diff = 0
+                nd = 1
+            
+            if 0 <= nx < n and 0 <= ny < n and board[nx][ny] == 0:
+                if prev_direction == diff:
+                    nc = cost + 600
+                else:
+                    nc = cost + 100
                     
+                if total_cost[nx][ny][nd] > nc:
+                    total_cost[nx][ny][nd] = nc
+                    queue.append((nx, ny, nc, nd))
+
     return min(total_cost[-1][-1])
