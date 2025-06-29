@@ -1,6 +1,5 @@
 def solution(n, times):
     answer = -1
-    times.sort()
     
     def binary_search(min_n, max_n):
         nonlocal answer
