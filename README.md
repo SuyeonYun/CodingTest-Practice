@@ -112,5 +112,5 @@
 
 > | 날짜 | Python | 문제 | 링크 |
 > |------|--------|------|------|
-> | 06/29 | ✅ | 경주로 건설 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/67259) |
-> | 06/29 | ✅ | 경주로 건설 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/67259) |
+> | 06/27 | ✅ | 입국심사 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43238) |
+> | 06/28 | ✅ | 경주로 건설 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/67259) |
