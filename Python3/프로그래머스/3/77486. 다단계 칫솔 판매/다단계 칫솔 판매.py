@@ -1,17 +1,13 @@
 from collections import deque
-import sys
-sys.setrecursionlimit(20000)
 
 class Node:
-    def __init__(self, idx, price, child, parent, visited):
+    def __init__(self, idx, price, parent):
         self.idx = idx
         self.price = price
-        self.child = child
         self.parent = parent
-        self.visited = visited
     
     def __repr__(self):
-        return repr((self.idx, self.price, self.child, self.parent, self.visited))
+        return repr((self.idx, self.price, self.parent))
 
 def solution(enroll, referral, seller, amount):
     l = len(enroll)
@@ -25,11 +21,7 @@ def solution(enroll, referral, seller, amount):
         e_dict[enroll[i]] = i
     
     for i in range(l):
-        employees.append(Node(i, 0, [], e_dict[referral[i]], False))
-        
-    for i in range(l):
-        if employees[i].parent >= 0:
-            employees[employees[i].parent].child.append(i)
+        employees.append(Node(i, 0, e_dict[referral[i]]))
         
     for i in range(len(seller)):
         cur = employees[e_dict[seller[i]]]
