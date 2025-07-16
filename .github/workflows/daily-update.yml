@@ -5,6 +5,7 @@ on:
     paths:
       - 'Python/**'
       - 'Python3/**'
+      - 'PyPy3/**'
   workflow_dispatch:
 
 jobs:
