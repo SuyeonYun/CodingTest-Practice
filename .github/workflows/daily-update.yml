@@ -25,10 +25,11 @@ jobs:
 
           PYTHON_STATUS="✕"
 
-          TODAY=$(date '+%Y년 %m월 %d일')
+          TODAY1=$(date '+%Y년 %-m월 %-d일')  # 2025년 7월 16일
+          TODAY2=$(date '+%Y년 %m월 %d일')   # 2025년 07월 16일
 
-          # 공통 문제 (Python 기준)
-          PYTHON_FILE=$(grep -Erl "${TODAY}" --include="README.md" "Python|Python3|PyPy3" | head -n 1)
+          PYTHON_FILE=$(find Python Python3 PyPy3 -name "README.md" -exec grep -El "${TODAY1}|${TODAY2}" {} + | head -n 1)
+
 
           if [[ -n $PYTHON_FILE ]]; then PYTHON_STATUS="✅"; fi
 
