@@ -119,3 +119,4 @@
 > | 07/05 | ✅ | [1차] 셔틀버스 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/17678) |
 > | 07/06 | ✅ | 가장 긴 팰린드롬 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12904) |
 > | 07/16 | ✕ | - | [문제 링크](-) |
+> | 07/16 | ✕ | - | [문제 링크](-) |
