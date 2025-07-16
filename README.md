@@ -118,9 +118,6 @@
 > | 07/04 | ✅ | 다단계 칫솔 판매 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/77486) |
 > | 07/05 | ✅ | [1차] 셔틀버스 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/17678) |
 > | 07/06 | ✅ | 가장 긴 팰린드롬 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12904) |
-> | 07/16 | ✕ | - | [문제 링크](-) |
-> | 07/16 | ✕ | - | [문제 링크](-) |
-> | 07/16 | ✕ | - | [문제 링크](-) |
-> | 07/16 | ✕ | - | [문제 링크](-) |
-> | 07/16 | ✕ | - | [문제 링크](-) |
-> | 07/16 | ✅ | 도미노 게임 | [문제 링크](https://www.acmicpc.net/problem/34053) |
+> | 07/11 | ✅ | (ucpc) 체육은 수학과목 입니다 2 | [문제 링크](https://www.acmicpc.net/problem/34052) |
+> | 07/12 | ✅ | (ucpc) 도미노 게임 | [문제 링크](https://www.acmicpc.net/problem/34053) |
+> | 07/13 | ✅ | (ucpc) 콘서트 (c++) | [문제 링크](https://www.acmicpc.net/problem/34056) |
