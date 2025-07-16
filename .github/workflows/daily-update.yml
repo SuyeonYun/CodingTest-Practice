@@ -28,7 +28,7 @@ jobs:
           TODAY=$(date '+%Y년 %m월 %d일')
 
           # 공통 문제 (Python 기준)
-          PYTHON_FILE=$(grep -rl "${TODAY}" "Python3" --include="README.md" | head -n 1)
+          PYTHON_FILE=$(grep -Erl "${TODAY}" --include="README.md" "Python|Python3|PyPy3" | head -n 1)
 
           if [[ -n $PYTHON_FILE ]]; then PYTHON_STATUS="✅"; fi
 
