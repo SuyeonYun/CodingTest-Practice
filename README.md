@@ -104,11 +104,10 @@
 > | 06/11 | ✅ | 여행경로(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43164) | ✅ | Find Consistently Improving Employees | [문제 링크](https://leetcode.com/problems/find-consistently-improving-employees/submissions/1660296874/?envType=problem-list-v2&envId=database) |
 > | 06/12 | ✅ | 부대복귀(재풀이) | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/132266) | ✅ | Seasonal Sales Analysis | [문제 링크](https://leetcode.com/problems/seasonal-sales-analysis/?envType=problem-list-v2&envId=database) |
 
-### 📌 06/13 ~ 06/17 : 네이버 코테 기출 풀이(노션에 작성)
-### 📌 06/18 ~ 06/22 : 오픽 공부
+### 📌 06/13 ~ 06/22 : 네이버 코테 기출 문풀(노션에 작성)
 
-### 📌 06/23 ~ 07/14 : 계절학기 및 ucpc, scpc 준비
-(※ 월 ~ 목 취업 준비, 금 ~ 일 Python lv3 1문제 풀이)
+### 📌 06/23 ~ 07/13 : ucpc준비
+(※ 금 ~ 일 Python lv3 1문제 풀이)
 
 > | 날짜 | Python | 문제 | 링크 |
 > |------|--------|------|------|
@@ -121,3 +120,9 @@
 > | 07/11 | ✅ | (ucpc) 체육은 수학과목 입니다 2 | [문제 링크](https://www.acmicpc.net/problem/34052) |
 > | 07/12 | ✅ | (ucpc) 도미노 게임 | [문제 링크](https://www.acmicpc.net/problem/34053) |
 > | 07/13 | ✅ | (ucpc) 콘서트 (c++) | [문제 링크](https://www.acmicpc.net/problem/34056) |
+> | 07/14 | ✅ | (ucpc) 로봇 청소기 (c++) | [문제 링크](https://www.acmicpc.net/problem/34060) |
+
+### 📌 07/21 ~ 08/31 : 매주 3문제씩 문풀
+(※ 일주일에 Python lv3 총 3문제 풀이)
+> | 날짜 | Python | 문제 | 링크 |
+> |------|--------|------|------|
