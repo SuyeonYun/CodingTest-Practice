@@ -123,9 +123,10 @@
 > | 07/14 | ✅ | (ucpc) 로봇 청소기 (c++) | [문제 링크](https://www.acmicpc.net/problem/34060) |
 
 ### 📌 07/21 ~ 08/31 : 매주 3문제씩 문풀
+### (07/28 ~ 08/10 : sds 알고리즘 특강)
 (※ 일주일에 Python lv3 총 3문제 풀이)
 > | 날짜 | Python | 문제 | 링크 |
 > |------|--------|------|------|
-> | 07/22 | ✅ | 거스름돈 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12907) |
+> | 07/21 | ✅ | 거스름돈 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12907) |
 > | 07/22 | ✅ | 풍선 터트리기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/68646) |
-> | 07/22 | ✅ | 순위 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/49191?language=python3#) |
+> | 07/23 | ✅ | 순위 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/49191?language=python3#) |
