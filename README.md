@@ -126,3 +126,4 @@
 (※ 일주일에 Python lv3 총 3문제 풀이)
 > | 날짜 | Python | 문제 | 링크 |
 > |------|--------|------|------|
+> | 07/22 | ✅ | 거스름돈 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12907) |
