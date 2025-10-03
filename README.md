@@ -130,3 +130,4 @@
 > | 07/21 | ✅ | 거스름돈 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12907) |
 > | 07/22 | ✅ | 풍선 터트리기 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/68646) |
 > | 07/23 | ✅ | 순위 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/49191?language=python3#) |
+> | 10/03 | ✅ | 가장 많이 받은 선물 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/258712?language=python3) |
