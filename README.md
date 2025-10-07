@@ -133,3 +133,4 @@
 > | 10/03 | ✅ | 가장 많이 받은 선물 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/258712?language=python3) |
 > | 10/03 | ✅ | 가장 많이 받은 선물 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/258712?language=python3) |
 > | 10/07 | ✅ | 개인정보 수집 유효기간 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/150370?language=python3) |
+> | 10/07 | ✅ | 개인정보 수집 유효기간 | [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/150370?language=python3) |
